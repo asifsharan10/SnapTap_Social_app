@@ -52,7 +52,7 @@ import { useUserContext } from "@/context/AuthContext"
 
     if(!session) {
       return toast({ 
-        title: 'Sign in failed. Please try again.'})
+        title: 'Sign up failed. Please try again.'})
     }
 
     const isLoggedIn = await checkAuthUser();
