@@ -223,7 +223,7 @@ export async function searchPosts(searchTerm: string) {
     console.log(error);
   }
 }
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export async function getInfinitePosts({ pageParam }: { pageParam: number }) {
   const queries: any[] = [Query.orderDesc("$updatedAt"), Query.limit(9)];
 
